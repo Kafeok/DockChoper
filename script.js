@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const text = "Welcome to My World";
+    const text = "Hi, Fox! Welcome to My World";
     const typewriter = document.querySelector(".typewriter");
     let index = 0;
   

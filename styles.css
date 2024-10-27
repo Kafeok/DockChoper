@@ -1,108 +1,106 @@
 /* Reset default styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  /* Default Night Theme */
-  body.night-theme {
-    background-color: #0d0d0d;
-    color: #00ff00;
-  }
-  
-  .terminal {
-    background-color: #121212;
-    padding: 2rem;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.2);
-    text-align: left;
-  }
-  
-  .typewriter {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-  }
-  
-  .highlight {
-    color: #33ff33;
-    font-weight: bold;
-  }
-  
-  .terminal ul {
-    list-style: none;
-    margin: 1rem 0;
-  }
-  
-  .terminal li {
-    margin: 0.5rem 0;
-  }
-  
-  footer {
-    margin-top: 1.5rem;
-    font-size: 0.8rem;
-    text-align: center;
-    color: #33ff33;
-  }
-  
-  /* Day Theme */
-  body.day-theme {
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .day-theme .terminal {
-    background-color: #ffffff;
-    color: #333;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .day-theme .highlight {
-    color: #006400;
-  }
-  
-  /* Typing Animation */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #00ff00; }
-  }
-  
-  /* Theme Toggle Button */
-  .theme-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  
-  #toggleButton {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #006400;
-    color: white;
-    font-family: inherit;
-  }
-  
-  .day-theme #toggleButton {
-    background-color: #333;
-    color: white;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Default Night Theme */
+body.night-theme {
+  background-color: #000; /* Deep black background */
+  color: #00ff00; /* Bright green text */
+}
+
+.terminal {
+  background-color: #121212; /* Dark gray for terminal */
+  padding: 2rem;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.3); /* Bright green shadow */
+  text-align: left;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+.highlight {
+  color: #33ff33; /* Light green highlight */
+}
+
+.terminal ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.terminal li {
+  margin: 0.5rem 0;
+}
+
+footer {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #33ff33; /* Light green footer */
+}
+
+/* Day Theme */
+body.day-theme {
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Darker text color for readability */
+}
+
+.day-theme .terminal {
+  background-color: #ffffff; /* White for terminal background */
+  color: #333; /* Dark text color */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.day-theme .highlight {
+  color: #008000; /* Darker green for highlight */
+}
+
+/* Typing Animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #00ff00; }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#toggleButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #006400; /* Dark green for button */
+  color: white; /* White text */
+  font-family: inherit;
+}
+
+.day-theme #toggleButton {
+  background-color: #333; /* Dark gray for button in day mode */
+  color: white; /* White text */
+}

@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Leo </title>
+    <title>Your Name's Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Welcome to My Personal Page</h1>
-        <p>I'm...</p>
+        <p>I'm a [Your Profession] based in [Your Location].</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
+    <section id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm ..., YOLO.</p>
+        <p>Hi! I'm [Your Name], a passionate [Your Profession/Field]. I enjoy [Your Interests/Activities].</p>
     </section>
-    <section>
+    <section id="projects">
         <h2>My Projects</h2>
-        <ul>
-            <li><a href="https://github.com/yourusername/project1">Project 1</a> - A brief description of Project 1.</li>
-            <li><a href="https://github.com/yourusername/project2">Project 2</a> - A brief description of Project 2.</li>
-        </ul>
+        <div class="project">
+            <h3><a href="https://github.com/yourusername/project1">Project 1</a></h3>
+            <p>A brief description of Project 1.</p>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/yourusername/project2">Project 2</a></h3>
+            <p>A brief description of Project 2.</p>
+        </div>
     </section>
-    <footer>
+    <footer id="contact">
         <p>Contact me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
     </footer>
 </body>
